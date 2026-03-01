@@ -2,9 +2,38 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Project
+## Repository
 
-Single-file browser game: `tic-tac-toe.html` — a standalone tic-tac-toe implementation with no build step, no dependencies, and no package manager.
+**GitHub:** https://github.com/Eshilnikov/experiments — общее пространство для экспериментов и проектов.
+
+Каждый проект живёт в отдельной папке внутри репозитория (например, `tic-tac-toe/`, `restaurant-app/`). Одиночные файлы — в корне.
+
+## Git workflow
+
+После каждого значимого изменения:
+1. `git add <файлы>`
+2. `git commit -m "описание"` — сообщение на английском, кратко описывает суть изменений
+3. `git push`
+
+Для стабильных версий проектов ставить теги: `git tag v1.0 && git push --tags`
+
+**Откат:**
+- К тегу: `git checkout v1.0`
+- Отмена коммита: `git revert <hash>`
+- Жёсткий откат: `git reset --hard <tag/hash>`
+
+## Git config (локальный)
+
+```
+user.name = Eshilnikov
+user.email = Eshilnikov@users.noreply.github.com
+```
+
+## Current projects
+
+### tic-tac-toe.html
+
+Single-file browser game — standalone tic-tac-toe, no build step, no dependencies.
 
 **To run:** open `tic-tac-toe.html` directly in a browser.
 
